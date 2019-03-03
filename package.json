@@ -1,0 +1,13 @@
+{
+  "name": "carousel-landing-page",
+  "version": "1.0.0",
+  "description": "carousel landing page for a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "gh-pages -d dist"
+  },
+  "homepage": "https://briansekwakwa.github.io/carousel-landing-page",
+  "keywords": [],
+  "author": "Brian Sekwakwa",
+  "license": "MIT"
+}
