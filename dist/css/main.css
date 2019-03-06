@@ -1,3 +1,43 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.navigation {
+  height: 3rem;
+  background: rgba(125, 14, 55, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+/* Navigation Links */
+.links ul {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.links ul li {
+  margin-left: 1.2rem;
+  list-style: none;
+}
+
+/* Navigation Logo */
+.logo {
+  text-align: center;
+}
+
+.logo--primary-color {
+  color: green;
+}
+
+.logo--secondary-color {
+  color: grey;
+}
+
+/* Navigation Media Icons */
+.socialMedia {
+  text-align: center;
 }
