@@ -41,3 +41,24 @@
 .socialMedia {
   text-align: center;
 }
+
+/* Slider */
+
+.carousel-inner {
+  height: 100vh;
+}
+
+#first {
+  background: red;
+  height: 100%;
+}
+
+#second {
+  background: yellow;
+  height: 100%;
+}
+
+#third {
+  background: orange;
+  height: 100%;
+}
