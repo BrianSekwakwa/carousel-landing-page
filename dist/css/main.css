@@ -13,17 +13,21 @@ h1 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1rem;
   text-align: center;
   padding: 10px;
+  color: #eee;
 }
 
 /* Navigation Links */
+
 nav {
   height: 40px;
   width: 100%;
   background-color: #333;
   color: #eee;
+  position: fixed;
+  z-index: 2;
 }
 nav ul {
   padding: 0;
@@ -32,6 +36,7 @@ nav ul {
 nav li {
   display: inline;
   float: left;
+  transition: all 0.3s;
 }
 nav a {
   display: inline-block;
@@ -42,6 +47,10 @@ nav a {
   color: #eee;
   text-decoration: none;
 }
+
+nav a:hover {
+  text-decoration: none;
+}
 nav li:hover {
   background-color: #444;
 }
@@ -49,18 +58,59 @@ nav a#openup {
   display: none;
 }
 
+/* Showcase area */
+.images {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #first {
+  background: url("../img/image01--very-low-res.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#first button {
+  width: 8rem;
+  height: 2.5rem;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  background: #333;
+  color: #eee;
+  transition: all 0.3s;
+}
+
+#first button:focus {
+  outline: none;
+}
+
+#first button:hover {
+  background: #eee;
+  color: #333;
+  border-color: #333;
 }
 
 #second {
+  background: url("../img/image02--very-low-res.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #third {
+  background: url("../img/image03--very-low-res.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   h1 {
     font-size: 2.8em;
   }
@@ -121,6 +171,81 @@ nav a#openup {
 
 .cf {
   zoom: 1;
+}
+
+@media screen and (min-width: 960px) {
+  /* Showcase area */
+  .images p {
+    width: 580px;
+  }
+
+  #first {
+    background: url("../img/image01--low-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #second {
+    background: url("../img/image02--low-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #third {
+    background: url("../img/image03--low-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* Showcase area */
+  #first {
+    background: url("../img/image01--mid-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #second {
+    background: url("../img/image02--mid-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #third {
+    background: url("../img/image03--mid-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  /* Showcase area */
+  #first {
+    background: url("../img/image01--hi-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #second {
+    background: url("../img/image02--hi-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #third {
+    background: url("../img/image03--hi-res.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* For IE 6/7 (trigger hasLayout) */
